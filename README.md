@@ -54,6 +54,8 @@ A method for providing an authoritative Taxonomy on a Drupal site, and using tha
   * Select the Endpoint you configured above
   * Save
 
+When filling out the form for new nodes, this field will look up the text you type and autocomplete terms from the remotely-hosted Taxonomy. When a valid term is selected, it will automatically populate the URI for the term.
+
 ## Future Goals
 
 * We'd like to see if there's any way to leverage the REST API to not only read data from the remote endpoint, but also write data to that endpoint when terms entered in the form do not retrieve a lookup result.
