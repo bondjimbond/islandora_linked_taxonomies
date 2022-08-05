@@ -4,8 +4,8 @@ A method for providing an authoritative Taxonomy on a Drupal site, and using tha
 
 ## Concept
 
-* One site acting as a hub hosting a taxonomy
-* Other sites using that taxonomy as an endpoint for reference fields
+* One site acting as a Provider, a hub hosting a taxonomy
+* Other Client sites using that taxonomy as an endpoint for reference fields
 * Future goals: Allow those sites to write new data to that shared taxonomy
 
 ## Modules required
