@@ -43,7 +43,7 @@ A method for providing an authoritative Taxonomy on a Drupal site, and using tha
   * Add Linked Data Lookup Endpoint
   * Label: your choice
   * Endpoint type: `URL Argument Type`
-  * Base URL: ``https://[your website]/autocomplete_endpoint/[endpoint machine name]?q=` [Note: it must end with `?q=`.]
+  * Base URL: `https://[your website]/autocomplete_endpoint/[endpoint machine name]?q=` [Note: it must end with `?q=`.]
   * Result record JSON path: `[*]`
   * Label JSON key: `label`
   * URL JSON key: `uri`
