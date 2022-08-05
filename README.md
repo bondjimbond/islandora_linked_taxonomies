@@ -1,19 +1,17 @@
 # Islandora Linked Taxonomies
 
-A place to collect thoughts about linked taxonomies in Islandora.
+A method for providing an authoritative Taxonomy on a Drupal site, and using that Taxonomy on another Drupal site.
 
 ## Concept
 
 * One site acting as a hub hosting a taxonomy
 * Other sites using that taxonomy as an endpoint for reference fields
-* IF POSSIBLE: Allow those sites to write new data to that shared taxonomy
+* Future goals: Allow those sites to write new data to that shared taxonomy
 
 ## Modules required
 
 * https://github.com/mjordan/autocomplete_endpoint
 * https://www.drupal.org/project/linked_data_field 
-
-(Decided not to use UTSC's module because it appears to be redundant)
 
 ## Process
 
@@ -49,9 +47,13 @@ A place to collect thoughts about linked taxonomies in Islandora.
   * Result record JSON path: `[*]`
   * Label JSON key: `label`
   * URL JSON key: `uri`
+  Your endpoint is now configured as a field that can be added to a content type.
+3. Add a lookup field to your Content Type:
+  * Manage Fields on your content type
+  * Field type: `Linked Data Lookup Field`
+  * Select the Endpoint you configured above
+  * Save
 
-Your endpoint is now configured as a field that can be added to a content type
+## Future Goals
 
-
-## Detailed process
-
+We'd like to see if there's any way to leverage the REST API to not only read data from the remote endpoint, but also write data to that endpoint when terms entered in the form do not retrieve a lookup result.
