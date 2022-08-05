@@ -56,4 +56,5 @@ A method for providing an authoritative Taxonomy on a Drupal site, and using tha
 
 ## Future Goals
 
-We'd like to see if there's any way to leverage the REST API to not only read data from the remote endpoint, but also write data to that endpoint when terms entered in the form do not retrieve a lookup result.
+* We'd like to see if there's any way to leverage the REST API to not only read data from the remote endpoint, but also write data to that endpoint when terms entered in the form do not retrieve a lookup result.
+* It would be nice to automatically populate the taxonomy URI field with a link to itself. Have not yet figured out how to do this - tried the field_token_value module, but it is unable to use `[node:url]` as a default.
